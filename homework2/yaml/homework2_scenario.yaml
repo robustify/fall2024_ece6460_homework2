@@ -1,0 +1,17 @@
+# Bezier maps file
+route_map_package: avs_lecture_launch
+route_map_file: yaml/oakland_route_map.yaml
+
+gazebo: true
+map_center_lat: 42.670763
+map_center_lon: -83.217236
+
+path_resolution: 0.5
+preview_dist: 30.0
+odom_topic: /vehicle/perfect_gps/odom
+ego_route_sequence:
+  - { 'node_id': 37 }
+  - { 'node_id': 18 }
+  - { 'node_id': 33 }
+  - { 'node_id': 5 }
+

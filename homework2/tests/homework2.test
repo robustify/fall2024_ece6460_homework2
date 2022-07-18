@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="rosservice" type="rosservice" name="set_base_log_level" args="call --wait /homework2/set_logger_level 'ros.homework2' 'error'" />
+
+  <include file="$(find homework2)/launch/homework2.launch" >
+    <arg name="headless" value="true" />
+  </include>
+
+  <test pkg="homework2" type="test_homework2" test-name="homework2_tests" time-limit="300.0" />
+
+</launch>
